@@ -1,0 +1,104 @@
+{
+  "version": 0,
+  "command_max_bytes": 64,
+  "ticker_max_bytes": 100,
+  "payload_max_bytes": 140,
+  "vectors": [
+    {
+      "id": "buy",
+      "kind": "command",
+      "text": "!b 1.5 0.0042",
+      "byte_len": 13
+    },
+    {
+      "id": "buy-with-mac",
+      "kind": "command",
+      "text": "!b 1.5 0.0042 ERERERERERE",
+      "byte_len": 25
+    },
+    {
+      "id": "sell",
+      "kind": "command",
+      "text": "!s 0.8 0.0043",
+      "byte_len": 13
+    },
+    {
+      "id": "cancel",
+      "kind": "command",
+      "text": "!c k7f2",
+      "byte_len": 7
+    },
+    {
+      "id": "take",
+      "kind": "command",
+      "text": "!t k7f2",
+      "byte_len": 7
+    },
+    {
+      "id": "ping",
+      "kind": "command",
+      "text": "!p",
+      "byte_len": 2
+    },
+    {
+      "id": "accepted",
+      "kind": "flag",
+      "text": "Ak7f2",
+      "byte_len": 5
+    },
+    {
+      "id": "rejected-with-oid",
+      "kind": "flag",
+      "text": "Rk7f2r",
+      "byte_len": 6
+    },
+    {
+      "id": "rejected-rate",
+      "kind": "flag",
+      "text": "Rr",
+      "byte_len": 2
+    },
+    {
+      "id": "rejected-limit",
+      "kind": "flag",
+      "text": "Rl",
+      "byte_len": 2
+    },
+    {
+      "id": "ticker",
+      "kind": "ticker",
+      "text": "T|XMR/LTC|0.004200|0.004100|0.004300|12.5000|0001",
+      "byte_len": 49
+    },
+    {
+      "id": "proof-chunk",
+      "kind": "dm",
+      "text": "P0005aGk=",
+      "byte_len": 9
+    },
+    {
+      "id": "nack-bitmap",
+      "kind": "dm",
+      "text": "N0001BQ==",
+      "byte_len": 9
+    },
+    {
+      "id": "ack-prefix",
+      "kind": "dm",
+      "text": "Y0001AAU=",
+      "byte_len": 9
+    },
+    {
+      "id": "proof-commitment",
+      "kind": "dm",
+      "text": "P0001utO/wHvkNF57LGzR34jtObSQTsa5srMN9BAMnc+/iBg=",
+      "byte_len": 49
+    },
+    {
+      "id": "register",
+      "kind": "dm",
+      "text": "G0001AQABAgMEBQYHCAkKCwwNDg8QERITFBUWFxgZGhscHR4fdGx0YzFxZXhhbXBsZWFkZHI=",
+      "byte_len": 73
+    }
+  ]
+}

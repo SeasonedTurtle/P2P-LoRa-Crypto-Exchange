@@ -1,0 +1,13 @@
+---
+description: LoRa-DEX rules for every change
+alwaysApply: true
+---
+
+- Follow `LORA_DEX_PLAN.md` and `AGENTS.md`. Do not start a phase before the previous exit criteria pass.
+- Test networks only (LTC testnet4/regtest, XMR stagenet/regtest). Mainnet requires `NETWORK=mainnet` and `--i-understand-this-is-real-money`.
+- Spec first: `docs/PROTOCOL.md` is the wire-format source of truth. Change the spec in the same commit as the code.
+- No secrets in the repo, logs, or fixtures. Channel 1's PSK is a spam gate, not confidentiality.
+- Amounts are integers in atomic units. No float money.
+- Do not implement elliptic-curve or DLEQ math from scratch.
+- Pause before the fee ledger (P1-5) and bond ledger (P1-6) until D1–D3 are answered in `docs/OPEN_QUESTIONS.md`.
+- Physical radios are a human step. Record that work in `docs/HARDWARE_TODO.md` and use the mock radio in CI.
